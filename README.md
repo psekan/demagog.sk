@@ -2,7 +2,7 @@
 ## Project description
 Command line application for processing politicians' assertions from public website http://www.demagog.sk/.
 
-## How to install:
+## How to install
 
 For installation you just need `git` and `php 5.6/7.x`.  
 ```bash
@@ -13,7 +13,7 @@ cd demagog.sk
 php demagog update
 ```
 
-## Available commands:
+## Available commands
 ```
 help         Displays help for a command
 list         Lists commands
