@@ -1,0 +1,16 @@
+{
+    "name": "peter.sekan/demagog.sk",
+    "description": "Parser of the website demagog.sk",
+    "authors": [
+        {
+            "name": "Peter Sekan",
+            "email": "peter.sekan11@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^3.0"
+    },
+    "autoload": {
+        "psr-0": { "": "src/" }
+    }
+}
