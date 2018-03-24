@@ -40,6 +40,9 @@ class JSONDatabase extends Database
     }
 
     private function load() {
+        if (!file_exists($this->dir)) {
+            mkdir($this->dir);
+        }
         $files = $this->listOfFiles();
         foreach ($files as $file) {
             $politician = $this->createPoliticianFromJson(file_get_contents($this->dir.'/'.$file));

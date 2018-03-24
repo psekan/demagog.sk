@@ -23,11 +23,15 @@ class PoliticianParser
         $ids = $matches[1];
         if (count($ids) == 0) return false;
         $database->clearDatabase();
+        echo "Updating database. Downloading " . count($ids) . " politicians:" . PHP_EOL;
+        $i = 1;
         foreach ($ids as $id) {
             $politician = self::parsePoliticianPage($id);
+            echo $i. " / " . count($ids) . " downloaded" . PHP_EOL;
             if ($politician !== null) {
                 $database->addPolitician($politician);
             }
+            $i++;
         }
         return true;
     }

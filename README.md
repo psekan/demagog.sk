@@ -4,12 +4,13 @@ Command line application for processing politicians' assertions from public webs
 
 ## How to install
 
-For installation you just need `git` and `php 5.6/7.x`.  
+For installation you just need `git`, `php 5.6/7.x` and `composer`.  
 ```bash
 # Clone source code to a directory
 git clone https://github.com/psekan/demagog.sk.git
 # Initialize database
 cd demagog.sk
+composer install
 php demagog update
 ```
 
